@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="资源文件\Stencil">
+      <UniqueIdentifier>{fd3c0f7b-066e-43db-83f6-1f2263f2cf3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Blend">
+      <UniqueIdentifier>{051cde3b-8490-4a90-a156-f5940b80489b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\frameBuffer">
+      <UniqueIdentifier>{4fc95eb3-7067-4aaa-bc03-14d8cab7e7dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\CubeMap">
+      <UniqueIdentifier>{dcd0d70f-e59a-43b6-992c-51f652cd7579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Ubo">
+      <UniqueIdentifier>{1444a6b6-3d78-4215-b9cf-285a3609b9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\GeomtryShader">
+      <UniqueIdentifier>{608722fe-5f6f-4a80-be20-8f252fc4e02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Instancing">
+      <UniqueIdentifier>{3806da54-a02b-45cf-8d37-96172ece9553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\MSAA">
+      <UniqueIdentifier>{573ea0ec-9aec-409f-8950-b934017499b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\1.advanced_lighting">
+      <UniqueIdentifier>{2927f403-9a7a-419f-8020-d3c4e9878708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Gamm">
+      <UniqueIdentifier>{935c68c8-134e-4c17-9930-601eec6fcd5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\NormalMap">
+      <UniqueIdentifier>{e2592558-f8d4-4684-ab17-0c6c676d32fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\5.1.parallax_mapping">
+      <UniqueIdentifier>{95858099-8410-4b6c-a5fb-97df482fcca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\HDR">
+      <UniqueIdentifier>{6de91e49-678b-466c-b77a-586a106725d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\8.1.deferred_shading">
+      <UniqueIdentifier>{46595b65-eb70-4200-9929-949432de7f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Breakout">
+      <UniqueIdentifier>{2eecde29-2862-4e37-81b0-f09d4c9d8ef8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenGLSrc\LearnOpenGL-master\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OpenGLSrc\LearnOpenGL-master\src\stb_image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resource_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="program.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite_renderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="game_object.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="game_level.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_object.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\1.1.depth_testing.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\1.1.depth_testing.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Stencil\2.stencil_testing.vs">
+      <Filter>资源文件\Stencil</Filter>
+    </None>
+    <None Include="Shader\Stencil\2.stencil_single_color.fs">
+      <Filter>资源文件\Stencil</Filter>
+    </None>
+    <None Include="Shader\Stencil\2.stencil_testing.fs">
+      <Filter>资源文件\Stencil</Filter>
+    </None>
+    <None Include="Shader\Blend\3.1.blending.fs">
+      <Filter>资源文件\Blend</Filter>
+    </None>
+    <None Include="Shader\framebuffer\5.1.framebuffers.vs">
+      <Filter>资源文件\frameBuffer</Filter>
+    </None>
+    <None Include="Shader\framebuffer\5.1.framebuffers.fs">
+      <Filter>资源文件\frameBuffer</Filter>
+    </None>
+    <None Include="Shader\framebuffer\5.1.framebuffers_screen.vs">
+      <Filter>资源文件\frameBuffer</Filter>
+    </None>
+    <None Include="Shader\framebuffer\5.1.framebuffers_screen.fs">
+      <Filter>资源文件\frameBuffer</Filter>
+    </None>
+    <None Include="Shader\CubeMap\6.1.cubemaps.fs">
+      <Filter>资源文件\CubeMap</Filter>
+    </None>
+    <None Include="Shader\CubeMap\6.1.cubemaps.vs">
+      <Filter>资源文件\CubeMap</Filter>
+    </None>
+    <None Include="Shader\CubeMap\6.1.skybox.fs">
+      <Filter>资源文件\CubeMap</Filter>
+    </None>
+    <None Include="Shader\CubeMap\6.1.skybox.vs">
+      <Filter>资源文件\CubeMap</Filter>
+    </None>
+    <None Include="Shader\UBO\8.advanced_glsl.vs">
+      <Filter>资源文件\Ubo</Filter>
+    </None>
+    <None Include="Shader\UBO\8.blue.fs">
+      <Filter>资源文件\Ubo</Filter>
+    </None>
+    <None Include="Shader\UBO\8.green.fs">
+      <Filter>资源文件\Ubo</Filter>
+    </None>
+    <None Include="Shader\UBO\8.red.fs">
+      <Filter>资源文件\Ubo</Filter>
+    </None>
+    <None Include="Shader\UBO\8.yellow.fs">
+      <Filter>资源文件\Ubo</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.1.geometry_shader.vs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.1.geometry_shader.gs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.1.geometry_shader.fs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.2.geometry_shader.fs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.2.geometry_shader.gs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.2.geometry_shader.vs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.3.default.fs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.3.default.vs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.3.normal_visualization.vs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.3.normal_visualization.gs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\GeometryShader\9.3.normal_visualization.fs">
+      <Filter>资源文件\GeomtryShader</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.1.instancing.vs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.1.instancing.fs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.2.instancing.vs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.2.instancing.fs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.3.planet.fs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.3.planet.vs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.3.asteroids.fs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\Instancing\10.3.asteroids.vs">
+      <Filter>资源文件\Instancing</Filter>
+    </None>
+    <None Include="Shader\MSAA\11.2.aa_post.fs">
+      <Filter>资源文件\MSAA</Filter>
+    </None>
+    <None Include="Shader\MSAA\11.2.aa_post.vs">
+      <Filter>资源文件\MSAA</Filter>
+    </None>
+    <None Include="Shader\MSAA\11.2.anti_aliasing.fs">
+      <Filter>资源文件\MSAA</Filter>
+    </None>
+    <None Include="Shader\MSAA\11.2.anti_aliasing.vs">
+      <Filter>资源文件\MSAA</Filter>
+    </None>
+    <None Include="Shader\AdvanceLighting\1.advanced_lighting.vs">
+      <Filter>资源文件\1.advanced_lighting</Filter>
+    </None>
+    <None Include="Shader\AdvanceLighting\1.advanced_lighting.fs">
+      <Filter>资源文件\1.advanced_lighting</Filter>
+    </None>
+    <None Include="Shader\Gamm\2.gamma_correction.vs">
+      <Filter>资源文件\Gamm</Filter>
+    </None>
+    <None Include="Shader\Gamm\2.gamma_correction.fs">
+      <Filter>资源文件\Gamm</Filter>
+    </None>
+    <None Include="Shader\NormalMap\4.normal_mapping.vs">
+      <Filter>资源文件\NormalMap</Filter>
+    </None>
+    <None Include="Shader\NormalMap\4.normal_mapping.fs">
+      <Filter>资源文件\NormalMap</Filter>
+    </None>
+    <None Include="Shader\5.1.parallax_mapping\5.1.parallax_mapping.vs">
+      <Filter>资源文件\5.1.parallax_mapping</Filter>
+    </None>
+    <None Include="Shader\5.1.parallax_mapping\5.1.parallax_mapping.fs">
+      <Filter>资源文件\5.1.parallax_mapping</Filter>
+    </None>
+    <None Include="Shader\HDR\6.hdr.fs">
+      <Filter>资源文件\HDR</Filter>
+    </None>
+    <None Include="Shader\HDR\6.hdr.vs">
+      <Filter>资源文件\HDR</Filter>
+    </None>
+    <None Include="Shader\HDR\6.lighting.fs">
+      <Filter>资源文件\HDR</Filter>
+    </None>
+    <None Include="Shader\HDR\6.lighting.vs">
+      <Filter>资源文件\HDR</Filter>
+    </None>
+    <None Include="Shader\GBuffer\8.1.g_buffer.vs">
+      <Filter>资源文件\8.1.deferred_shading</Filter>
+    </None>
+    <None Include="Shader\GBuffer\8.1.g_buffer.fs">
+      <Filter>资源文件\8.1.deferred_shading</Filter>
+    </None>
+    <None Include="Shader\GBuffer\8.1.deferred_light_box.vs">
+      <Filter>资源文件\8.1.deferred_shading</Filter>
+    </None>
+    <None Include="Shader\GBuffer\8.1.deferred_light_box.fs">
+      <Filter>资源文件\8.1.deferred_shading</Filter>
+    </None>
+    <None Include="Shader\GBuffer\8.1.deferred_shading.vs">
+      <Filter>资源文件\8.1.deferred_shading</Filter>
+    </None>
+    <None Include="Shader\GBuffer\8.1.deferred_shading.fs">
+      <Filter>资源文件\8.1.deferred_shading</Filter>
+    </None>
+    <None Include="Shader\Breakout\sprite.vs">
+      <Filter>资源文件\Breakout</Filter>
+    </None>
+    <None Include="Shader\Breakout\sprite.fs">
+      <Filter>资源文件\Breakout</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite_renderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="game_level.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ball_object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

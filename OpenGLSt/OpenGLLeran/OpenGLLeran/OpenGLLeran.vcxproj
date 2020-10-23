@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EB3E836-8E43-4EEA-AC0E-3880F9939085}</ProjectGuid>
+    <RootNamespace>OpenGLLeran</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Project\OpenGL\OpenGLSrc\LearnOpenGL-master\includes;$(IncludePath)</IncludePath>
+    <ReferencePath>D:\Project\OpenGL\OpenGLSrc\LearnOpenGL-master\dlls;$(ReferencePath)</ReferencePath>
+    <LibraryPath>D:\Project\OpenGL\OpenGLSrc\LearnOpenGL-master\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenGLSrc\LearnOpenGL-master\src\glad.c" />
+    <ClCompile Include="..\..\..\OpenGLSrc\LearnOpenGL-master\src\stb_image.cpp" />
+    <ClCompile Include="ball_object.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="game_level.cpp" />
+    <ClCompile Include="game_object.cpp" />
+    <ClCompile Include="program.cpp" />
+    <ClCompile Include="resource_manager.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="sprite_renderer.cpp" />
+    <ClCompile Include="texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\1.1.depth_testing.fs" />
+    <None Include="Shader\1.1.depth_testing.vs" />
+    <None Include="Shader\5.1.parallax_mapping\5.1.parallax_mapping.fs" />
+    <None Include="Shader\5.1.parallax_mapping\5.1.parallax_mapping.vs" />
+    <None Include="Shader\AdvanceLighting\1.advanced_lighting.fs" />
+    <None Include="Shader\AdvanceLighting\1.advanced_lighting.vs" />
+    <None Include="Shader\Blend\3.1.blending.fs" />
+    <None Include="Shader\Breakout\sprite.fs" />
+    <None Include="Shader\Breakout\sprite.vs" />
+    <None Include="Shader\CubeMap\6.1.cubemaps.fs" />
+    <None Include="Shader\CubeMap\6.1.cubemaps.vs" />
+    <None Include="Shader\CubeMap\6.1.skybox.fs" />
+    <None Include="Shader\CubeMap\6.1.skybox.vs" />
+    <None Include="Shader\framebuffer\5.1.framebuffers.fs" />
+    <None Include="Shader\framebuffer\5.1.framebuffers.vs" />
+    <None Include="Shader\framebuffer\5.1.framebuffers_screen.fs" />
+    <None Include="Shader\framebuffer\5.1.framebuffers_screen.vs" />
+    <None Include="Shader\Gamm\2.gamma_correction.fs" />
+    <None Include="Shader\Gamm\2.gamma_correction.vs" />
+    <None Include="Shader\GBuffer\8.1.deferred_light_box.fs" />
+    <None Include="Shader\GBuffer\8.1.deferred_light_box.vs" />
+    <None Include="Shader\GBuffer\8.1.deferred_shading.fs" />
+    <None Include="Shader\GBuffer\8.1.deferred_shading.vs" />
+    <None Include="Shader\GBuffer\8.1.g_buffer.fs" />
+    <None Include="Shader\GBuffer\8.1.g_buffer.vs" />
+    <None Include="Shader\GeometryShader\9.1.geometry_shader.fs" />
+    <None Include="Shader\GeometryShader\9.1.geometry_shader.gs" />
+    <None Include="Shader\GeometryShader\9.1.geometry_shader.vs" />
+    <None Include="Shader\GeometryShader\9.2.geometry_shader.fs" />
+    <None Include="Shader\GeometryShader\9.2.geometry_shader.gs" />
+    <None Include="Shader\GeometryShader\9.2.geometry_shader.vs" />
+    <None Include="Shader\GeometryShader\9.3.default.fs" />
+    <None Include="Shader\GeometryShader\9.3.default.vs" />
+    <None Include="Shader\GeometryShader\9.3.normal_visualization.fs" />
+    <None Include="Shader\GeometryShader\9.3.normal_visualization.gs" />
+    <None Include="Shader\GeometryShader\9.3.normal_visualization.vs" />
+    <None Include="Shader\HDR\6.hdr.fs" />
+    <None Include="Shader\HDR\6.hdr.vs" />
+    <None Include="Shader\HDR\6.lighting.fs" />
+    <None Include="Shader\HDR\6.lighting.vs" />
+    <None Include="Shader\Instancing\10.1.instancing.fs" />
+    <None Include="Shader\Instancing\10.1.instancing.vs" />
+    <None Include="Shader\Instancing\10.2.instancing.fs" />
+    <None Include="Shader\Instancing\10.2.instancing.vs" />
+    <None Include="Shader\Instancing\10.3.asteroids.fs" />
+    <None Include="Shader\Instancing\10.3.asteroids.vs" />
+    <None Include="Shader\Instancing\10.3.planet.fs" />
+    <None Include="Shader\Instancing\10.3.planet.vs" />
+    <None Include="Shader\MSAA\11.2.aa_post.fs" />
+    <None Include="Shader\MSAA\11.2.aa_post.vs" />
+    <None Include="Shader\MSAA\11.2.anti_aliasing.fs" />
+    <None Include="Shader\MSAA\11.2.anti_aliasing.vs" />
+    <None Include="Shader\NormalMap\4.normal_mapping.fs" />
+    <None Include="Shader\NormalMap\4.normal_mapping.vs" />
+    <None Include="Shader\Stencil\2.stencil_single_color.fs" />
+    <None Include="Shader\Stencil\2.stencil_testing.fs" />
+    <None Include="Shader\Stencil\2.stencil_testing.vs" />
+    <None Include="Shader\UBO\8.advanced_glsl.vs" />
+    <None Include="Shader\UBO\8.blue.fs" />
+    <None Include="Shader\UBO\8.green.fs" />
+    <None Include="Shader\UBO\8.red.fs" />
+    <None Include="Shader\UBO\8.yellow.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ball_object.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="game_level.h" />
+    <ClInclude Include="game_object.h" />
+    <ClInclude Include="resource_manager.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="sprite_renderer.h" />
+    <ClInclude Include="Texture.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
